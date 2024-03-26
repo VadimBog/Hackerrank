@@ -12,10 +12,10 @@ import sys
 
 # Complete the solve function below.
 def solve(s):
-    fn, ln = s.split()
-    fn = fn.capitalize()
-    ln = ln.capitalize()
-    return f"{fn} {ln}"
+    y = s.split(" ")
+    for i in range(len(y)):
+        y[i] = y[i].capitalize()
+    return " ".join(y)
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
