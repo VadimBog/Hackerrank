@@ -15,6 +15,7 @@
 # You only know the value of K and the room number list.
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
+
 K = int(input())
 room_numbers = list(map(int, input().split()))
 room_count = {}
